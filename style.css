@@ -17,9 +17,13 @@ html {
     background-color: var(--fondo_Principal);
     font-family: "Inter", sans-serif;
 }
-h1 {
-
+.barra {
+    display: flex;
+    background-color: var(--fondo_Cards);
+    
 }
+
+
 
 h3 {
     flex: auto;
