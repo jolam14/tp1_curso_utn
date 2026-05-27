@@ -1,7 +1,27 @@
-* {
-    color: aliceblue;
-}
-html {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*:root{
+    --fondo_Principal:#12131A ;
+    --fondo_Cards: #1c1f2a;
+    --texto_Principal: #f2f2f7;
+    --texto_Secundario: #b4b7c9;
+    --cart_Violeta: #c99dff;
+    --cart_Naranja: #ffb21e;
+    --cart_Coral: #ff8a65;
+    --barra_Progreso: #d19bff;
+    --bordes_Sutiles: #2a2d3a;
+
 }
 
+html {
+    background-color: var(--fondo_Principal);
+    font-family: "Inter", sans-serif;
+}
+h1 {
+
+}
+
+h3 {
+    flex: auto;
+    
+}
