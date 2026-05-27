@@ -57,13 +57,27 @@ h1 {
 h2 {
     font-size: 38px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 20px;
     margin-bottom: 30px;
     color:var(--texto_Principal) ;
 }
-
+.fila_Text_Bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 24px auto;
+}
+.checkbox_Box {
+    display: flex;
+    gap: 30px;
+}
 h3 {
-    flex: auto;
+    color: var(--texto_Secundario);
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: capitalize;
     
 }
