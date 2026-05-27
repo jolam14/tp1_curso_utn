@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 *:root{
     --fondo_Principal:#12131A ;
     --fondo_Cards: #1c1f2a;
@@ -10,20 +9,42 @@
     --cart_Coral: #ff8a65;
     --barra_Progreso: #d19bff;
     --bordes_Sutiles: #2a2d3a;
-
 }
-
 html {
     background-color: var(--fondo_Principal);
     font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0;
+    /* mientras escribo no veo la letra  */
+    color: red;
 }
 .barra {
     display: flex;
-    background-color: var(--fondo_Cards);
-    
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem;
+    padding: 0.75rem 1rem;
+    color: var(--texto_Principal);
 }
-
-
+.barra img {
+    width: 70px;
+    height: 70px;
+}
+.barra button {
+    margin-left: auto;
+    padding: 0.6rem 0.9rem;
+    background-color: var(--fondo_Cards);
+    border: var(--bordes_Sutiles);
+    color: var(--texto_Principal);
+    border-radius: 299px;
+}
+.barra button:hover {
+    background-color: var(--texto_Principal);
+}
+h1 {
+    font-size: 100;
+    font-weight: 100;
+}
 
 h3 {
     flex: auto;
