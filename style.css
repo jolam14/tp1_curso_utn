@@ -120,7 +120,7 @@ h3 {
 }
 .tarjeta-violeta { 
     background-color: var(--cart_Violeta);  
-    background-image: url('./asset/verde.png');
+    background-image: url('./asset/verde.png');  
 }
 .tarjeta-naranja { 
     background-color: var(--cart_Naranja); 
@@ -164,6 +164,7 @@ h4 {
 @media (max-width: 600px) {
     .tarjetas-contenedor {
         grid-template-columns: 1fr;
-    } 
+    }
+    
     /* era si creo debo revisar, no si se va aqui revisar */
 }
