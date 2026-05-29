@@ -54,5 +54,6 @@ Variables CSS Globales: Se utilizó la pseudo-clase :root para almacenar toda la
 Integración de Fondos y Contraste: Para las tarjetas de estadísticas, se combinaron las propiedades background-color y background-image. Mediante background-position: right top y background-size: auto 100%, se logró arrinconar el patrón decorativo a la derecha, garantizando que el texto oscuro mantuviera un contraste óptimo sobre el color sólido de fondo.
 
 Estilización de Barras de Progreso: La etiqueta <progress> requirió el uso de selectores específicos para los motores web `(::-webkit-progress-bar, ::-webkit-progress-value)` para poder sobrescribir sus colores azules por defecto y aplicar los tonos grises y violetas de la paleta oficial.
+<img width="879" height="956" alt="update v1 2" src="https://github.com/user-attachments/assets/2d2f7259-4549-4f5a-a19f-25052cae7a0a" />
 
 
