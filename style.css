@@ -20,8 +20,6 @@ html, body {
     font-family: "Inter", sans-serif;
     padding: 0%;
     margin: 0;
-    /* mientras escribo no veo la letra  */
-    color: red;
 }
 /* header inicio*/ 
 .bar {
@@ -31,14 +29,12 @@ html, body {
     color: var(--texto_Principal);
     width: 100%;
     max-width: 750px;
-    margin: 0 auto 40px auto;
-    
+    margin: 0 auto 40px auto;   
 }
 .logo_Grupo {
     display: flex;
     align-items: center;
     gap: 12px;
-    /* revisar si solo funciona en contenedores flex */
 }
 .logo {
     width: 50px;
@@ -54,7 +50,7 @@ html, body {
     border-radius: 80px;
 }
 .bar button:hover {
-    background-color: var(--texto_Principal);
+    background-color: var(--barra_Progreso);
 }
 h1 {
     font-size: 20px;
@@ -84,7 +80,7 @@ h2 {
     min-height: 200px;
     background-color: var(--fondo_Cards);
     border: 1px solid var(--bordes_Sutiles);
-    color: var(--texto_Principal); 
+    color: var(--texto_Secundario); 
     border-radius: 12px;
     padding: 24px;
     font-family: "Inter", sans-serif;
@@ -98,7 +94,7 @@ h2 {
     border-color: var(--cart_Violeta);
 }
 /* texarea fin  */
-/* .checkbox_Box */
+/* checkbox_Box */
 .fila_Text_Bottom {
     display: flex;
     justify-content: space-between;
@@ -121,11 +117,29 @@ color: var(--texto_Secundario);
     text-transform: capitalize;
 }
 h3 input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid var(--texto_Secundario);
+    border-radius: 4px;
+    cursor: pointer;
     accent-color: var(--cart_Violeta);
     width: 16px;
     height: 16px;
     cursor: pointer;
-
+}
+h3 input[type="checkbox"]:checked {
+    background-color: var(--cart_Violeta);
+    border-color: var(--cart_Violeta);
+}
+h3 input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;         
+    top: 1px;          
+    width: 4px;        
+    height: 8px;
+/* checkbox */
+/* targeta contenedor */
 }
 .tarjetas-contenedor {
     display: grid;
@@ -166,18 +180,60 @@ h3 input[type="checkbox"] {
     font-weight: 700;
     line-height: 1;
 }
-
 h4 {
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
 }
+/* targeta contenedor fin */
+/* densidad inicio- coloco densidad por el traductor de google traduce Letter Density como densidad de la letra */
+.densidad-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 1 / -1; /* hacer que el bloque de densidad abarque todo el ancho del grid */
+    width: 100%;
+}
+
+.titulo-densidad {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--texto_Principal);
+}
+.densidad-fila {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--fondo_Principal); /* Fondo oscuro para cada letra */
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--texto_Secundario);
+}
+.densidad-numero {
+    font-size: 14px;
+    color: var(--texto_Secundario);
+    width: 90px;
+    text-align: right;
+}
 .barra-progreso-nativa {
-    flex-grow: 1;           
-    height: 12px;          
-    appearance: none;       
-    -webkit-appearance: none; 
-    border: none;           
+    flex-grow: 1;
+    min-width: 0;
+    width: auto;
+    height: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
 }
 .barra-progreso-nativa::-webkit-progress-bar {
     background-color: var(--fondo_Cards);
@@ -191,11 +247,29 @@ h4 {
     background-color: var(--barra_Progreso);
     border-radius: 6px;
 }
-
+/* densidad final */
+.ver-mas-btn {
+    background: none;
+    border: none;
+    color: var(--texto_Principal);
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    margin-top: 8px;
+    width: fit-content;
+}
+.ver-mas-btn:hover {
+    color: var(--barra_Progreso);
+    background-color: var(--fondo_Cards);
+}
+/* responsive */
 @media (max-width: 600px) {
     .tarjetas-contenedor {
         grid-template-columns: 1fr;
     }
-    
-    /* era si creo debo revisar, no si se va aqui revisar */
+    .fila_Text_Bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
 }
