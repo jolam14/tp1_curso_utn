@@ -18,7 +18,7 @@ html {
     /* mientras escribo no veo la letra  */
     color: red;
 }
-.barra {
+.bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@ html {
     width: 50px;
     height: 50px;
 }
-.barra button {
+.bar button {
     padding: 10px;
     background-color: var(--fondo_Cards);
     width: 70px;
@@ -47,7 +47,7 @@ html {
     color: var(--texto_Principal);
     border-radius: 80px;
 }
-.barra button:hover {
+.bar button:hover {
     background-color: var(--texto_Principal);
 }
 h1 {
@@ -78,6 +78,24 @@ h3 {
     color: var(--texto_Secundario);
     font-size: 10px;
     font-weight: 300;
-    text-transform: capitalize;
-    
+    text-transform: capitalize; 
+}
+.barra-progreso-nativa {
+    flex-grow: 1;           
+    height: 12px;          
+    appearance: none;       
+    -webkit-appearance: none; 
+    border: none;           
+}
+.barra-progreso-nativa::-webkit-progress-bar {
+    background-color: var(--fondo_Cards);
+    border-radius: 6px;
+}
+.barra-progreso-nativa::-webkit-progress-value {
+    background-color: var(--barra_Progreso);
+    border-radius: 6px;
+}
+.barra-progreso-nativa::-moz-progress-bar {
+    background-color: var(--barra_Progreso);
+    border-radius: 6px;
 }
