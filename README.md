@@ -26,9 +26,9 @@ La estilización se llevó a cabo utilizando un enfoque modular basado en una ma
 
 Estructura de Bloques: Se implementó Flexbox tanto en la sección de la cabecera como en la fila de opciones de control `(.fila_Text_Bottom)` para garantizar una correcta distribución espacial de los elementos a los extremos izquierdo y derecho (justify-content: space-between).
 
-CSS Grid: Se aplicó Grid Layout (grid-template-columns: repeat(3, 1fr)) en el contenedor de las tarjetas para alinear perfectamente las tres métricas y permitir que pasen a una sola columna en dispositivos móviles mediante Media Queries.
+CSS Grid: Se aplicó Grid Layout `(grid-template-columns: repeat(3, 1fr))` en el contenedor de las tarjetas para alinear perfectamente las tres métricas y permitir que pasen a una sola columna en dispositivos móviles mediante Media Queries.
 
-Consistencia en Píxeles: Se unificaron los márgenes, rellenos (paddings) y espaciados internos utilizando medidas fijas en píxeles (px) para asegurar la precisión con respecto al diseño guía del proyecto.
+Consistencia en Píxeles: Se unificaron los márgenes, rellenos `(paddings)` y espaciados internos utilizando medidas fijas en píxeles  para asegurar la precisión con respecto al diseño guía del proyecto.
 
 Variables CSS Globales: Se utilizó la pseudoclase :root para almacenar toda la paleta de colores exigida, facilitando la reutilización del código y manteniendo la coherencia visual en toda la página.
 
@@ -45,14 +45,14 @@ Personalización de los Checkboxes: Los inputs nativos de tipo checkbox poseen e
 
 Legibilidad en Tarjetas de Métricas: Inicialmente, las imágenes de fondo de las tarjetas se extendían por todo el contenedor, camuflando el texto. La dificultad se superó asegurando un color de fondo sólido en cada tarjeta y restringiendo el área de la imagen mediante posicionamiento CSS.
 
-CSS Grid: Se aplicó Grid Layout (grid-template-columns: repeat(3, 1fr)) en el contenedor de las tarjetas para alinear perfectamente las tres métricas y permitir que pasen a una sola columna en dispositivos móviles mediante Media Queries.
+CSS Grid: Se aplicó Grid Layout `(grid-template-columns: repeat(3, 1fr))` en el contenedor de las tarjetas para alinear perfectamente las tres métricas y permitir que pasen a una sola columna en dispositivos móviles mediante Media Queries.
 
-Consistencia en Píxeles: Se unificaron los márgenes, rellenos y espaciados internos utilizando medidas fijas en píxeles (px) para asegurar la precisión con respecto al diseño guía del proyecto.
+Consistencia en Píxeles: Se unificaron los márgenes, rellenos y espaciados internos utilizando medidas fijas en píxeles  para asegurar la precisión con respecto al diseño guía del proyecto.
 
 Variables CSS Globales: Se utilizó la pseudo-clase :root para almacenar toda la paleta de colores exigida, facilitando la reutilización del código y manteniendo la coherencia visual en toda la página.
 
 Integración de Fondos y Contraste: Para las tarjetas de estadísticas, se combinaron las propiedades background-color y background-image. Mediante background-position: right top y background-size: auto 100%, se logró arrinconar el patrón decorativo a la derecha, garantizando que el texto oscuro mantuviera un contraste óptimo sobre el color sólido de fondo.
 
-Estilización de Barras de Progreso: La etiqueta <progress> requirió el uso de selectores específicos para los motores web (::-webkit-progress-bar, ::-webkit-progress-value) para poder sobrescribir sus colores azules por defecto y aplicar los tonos grises y violetas de la paleta oficial.
+Estilización de Barras de Progreso: La etiqueta <progress> requirió el uso de selectores específicos para los motores web `(::-webkit-progress-bar, ::-webkit-progress-value)` para poder sobrescribir sus colores azules por defecto y aplicar los tonos grises y violetas de la paleta oficial.
 
 
