@@ -11,9 +11,9 @@ Google Fonts: Importación de la familia tipográfica "Inter" para mantener la c
 3. Cómo se organizó el HTML
 La estructura del documento se organizó dividiendo el contenido en bloques lógicos y contenedores limpios:
 
-Se utilizó un contenedor principal para agrupar el logo de la empresa y el título principal (<h1>) a la izquierda mediante un subcontenedor, separándolos del botón de configuración de tema situado a la derecha mediante Flexbox.
+Se utilizó un contenedor principal para agrupar el logo de la empresa y el título principal "(<h1>)" a la izquierda mediante un subcontenedor, separándolos del botón de configuración de tema situado a la derecha mediante Flexbox.
 
-Cuerpo Principal (.content): Un contenedor centralizado que alberga el título de la sección (<h2>) y el resto de los elementos interactivos y visuales.
+Cuerpo Principal (.content): Un contenedor centralizado que alberga el título de la sección "(<h2>)" y el resto de los elementos interactivos y visuales.
 
 Área de Texto (<textarea>): Siguiendo las pautas de maquetado semántico, se implementó la etiqueta obligatoria <textarea> con el texto estático, evitando el uso de etiquetas genéricas como <div> o <p>.
 
