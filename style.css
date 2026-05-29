@@ -5,7 +5,7 @@
     --texto_Principal: #f2f2f7;
     --texto_Secundario: #b4b7c9;
     --cart_Violeta: #0f4d31; /* color del ajuste para encanjar con la imagen*/
-     /* --cart_Violeta: #c99dff; color que no arrojo la ia */
+    --cart_Violeta1: #c99dff;/* color que no arrojo la ia */
     --cart_Naranja: #ffa408; /* color del ajuste para encanjar con la imagen*/
     /* --cart_Naranja: #ffb21e, color original  */
     --cart_Coral: #ff7869; /* color del ajuste para encanjar con la imagen*/
@@ -131,8 +131,8 @@ h3 input[type="checkbox"] {
     cursor: pointer;
 }
 h3 input[type="checkbox"]:checked {
-    background-color: var(--cart_Violeta);
-    border-color: var(--cart_Violeta);
+    background-color: var(--cart_Violeta1);
+    border-color: var(--cart_Violeta1);
 }
 h3 input[type="checkbox"]:checked::after {
     content: "";
